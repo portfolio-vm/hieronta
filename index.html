@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hieronta</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+<!--    <link rel="stylesheet" href="assets/css/fonts/fonts.css">-->
+    <link rel="stylesheet" href="assets/lib/bootstrap-5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/lib/bootstrap-5.0.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-md navbar-dark bd-navbar fixed-top">
+        <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Основная навигация">
+            <a class="navbar-brand p-0 me-2" href="/" aria-label="Бутстрап"><i class="fas fa-sign-language"></i> Hieronta Oy</a>
+            <select id="lang" class="navbar-nav flex-row flex-wrap " aria-label="Default select example">
+                <option value="1" selected>FI</option>
+                <option value="2">EN</option>
+                <option value="3">RU</option>
+            </select>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path></svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+                    <li class="nav-item col-6 col-md-auto"><a class="nav-link p-2 active" href="#startscreen" aria-current="true">Главная</a></li>
+                    <li class="nav-item col-6 col-md-auto"><a class="nav-link p-2" href="#services" rel="noopener">Services</a></li>
+                    <li class="nav-item col-6 col-md-auto"><a class="nav-link p-2" href="#reviews" rel="noopener">Отзывы</a></li>
+                    <li class="nav-item col-6 col-md-auto"><a class="nav-link p-2" href="#about" rel="noopener">About us</a></li>
+                </ul>
+                <hr class="d-md-none text-white-50">
+
+                <ul class="social navbar-nav flex-row flex-wrap ms-md-auto">
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2" href="https://www.facebook.com/" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-square"></i>
+                            <small class="d-md-none ms-2">Facebook</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2" href="https://www.instagram.com/" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                            <small class="d-md-none ms-2">Instagram</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2" href="https://vk.com/" target="_blank"
+                           rel="noopener">
+                            <i class="fab fa-vk"></i>
+                            <small class="d-md-none ms-2">VK</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2" href="https://twitter.com/" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                            <small class="d-md-none ms-2">Twitter</small>
+                        </a>
+                    </li>
+                </ul>
+                <hr class="d-md-none text-white-50">
+
+<!--                <a class="appointment btn btn-bd-download btn-warning btn-lg d-lg-inline-block my-2 my-md-0 ms-md-3 btn-group-lg" href="#contacts">Записаться на сеанс</a>-->
+                <button type="button" class="btn btn-warning btn-lg d-lg-inline-block my-2 my-md-0 ms-md-3 btn-group-lg no-focus" data-bs-toggle="modal" data-bs-target="#modal">Записаться на сеанс</button>
+
+            </div>
+        </nav>
+    </header>
+
+    <section id="startscreen" class="prlx img-1">
+        <div class="container">
+            <div class="row">
+                <div class="title" >
+                    <h1 class="">Массаж в Espoo</h1>
+                </div>
+                <div class="arrow">
+                    <a href="#services" class="arrow"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="bg-white">
+        <div class="container">
+            <div class="row text-center pt-2 pb-5">
+                <h3>Services</h3>
+            </div>
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-auto g-4 pb-3">
+                <div class="col">
+                    <div class="card h-100 w-100">
+                        <img src="assets/img/massage3.jpg" class="card-img-top" alt="Массаж спины">
+                        <div class="card-body">
+                            <h5 class="card-title">Классический массаж</h5>
+                            <p class="card-text">Проснувшись однажды утром после беспокойного сна, Грегор Замза
+                                обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на
+                                панцирнотвердой спине, он видел, стоило ему приподнять голову, свой</p>
+                        </div>
+                        <div class="card-footer d-grid gap-2">
+                            <button type="button" class="btn btn-lg btn-warning p-3 no-focus" data-bs-toggle="modal" data-bs-target="#modal">Записаться на сеанс</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-100">
+                        <img src="assets/img/foot-2.jpg" class="card-img-top" alt="Массаж ног">
+                        <div class="card-body">
+                            <h5 class="card-title">Массаж ног</h5>
+                            <p class="card-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого
+                                языкового океана. Маленький ручеек Даль журчит</p>
+                        </div>
+                        <div class="card-footer d-grid gap-2">
+                            <button type="button" class="btn btn-lg btn-warning p-3 no-focus" data-bs-toggle="modal" data-bs-target="#modal">Записаться на сеанс</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-100">
+                        <img src="assets/img/face.jpg" class="card-img-top" alt="Массаж лица">
+                        <div class="card-body">
+                            <h5 class="card-title">Массаж лица</h5>
+                            <p class="card-text">Душа моя озарена неземной радостью, как эти чудесные весенние утра,
+                                которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+                                словно созданном для таких, как я.</p>
+                        </div>
+                        <div class="card-footer d-grid gap-2">
+                            <button type="button" class="btn btn-lg btn-warning p-3 no-focus" data-bs-toggle="modal" data-bs-target="#modal">Записаться на сеанс</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-100">
+                        <img src="assets/img/massage4.jpg" class="card-img-top" alt="Расслабляющий массаж">
+                        <div class="card-body">
+                            <h5 class="card-title">Расслабляющий массаж</h5>
+                            <p class="card-text">Душа моя озарена неземной радостью, как эти чудесные весенние утра,
+                                которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+                                словно созданном для таких, как я.</p>
+                        </div>
+                        <div class="card-footer d-grid gap-2">
+                            <button type="button" class="btn btn-lg btn-warning p-3 no-focus" data-bs-toggle="modal" data-bs-target="#modal">Записаться на сеанс</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-100">
+                        <img src="assets/img/massage5.jpg" class="card-img-top" alt="Антицеллюлитный массаж">
+                        <div class="card-body">
+                            <h5 class="card-title">Антицеллюлитный массаж</h5>
+                            <p class="card-text">Душа моя озарена неземной радостью, как эти чудесные весенние утра,
+                                которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+                                словно созданном для таких, как я.</p>
+                        </div>
+                        <div class="card-footer d-grid gap-2">
+                            <button type="button" class="btn btn-lg btn-warning p-3 no-focus" data-bs-toggle="modal" data-bs-target="#modal">Записаться на сеанс</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-100">
+                        <img src="assets/img/massage6.jpg" class="card-img-top" alt="Локальный массаж">
+                        <div class="card-body">
+                            <h5 class="card-title">Локальный массаж</h5>
+                            <p class="card-text">Душа моя озарена неземной радостью, как эти чудесные весенние утра,
+                                которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+                                словно созданном для таких, как я.</p>
+                        </div>
+                        <div class="card-footer d-grid gap-2">
+                            <button type="button" class="btn btn-lg btn-warning p-3 no-focus" data-bs-toggle="modal" data-bs-target="#modal">Записаться на сеанс</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="prlx img-2">
+        <div class="container">
+            <div class="row">
+                <div class="col p-3">
+                    <h3 class="text-center">О нас</h3>
+                    <p>Мы эксперты в своем деле. У нас есть такой и такой сертификат, образование, опыт. Мы практикует это и это, столько и столько.
+                        Делаем это так и так хорошо. Далеко-далеко за словесными горами в стране гласных и
+                        согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика
+                        большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми
+                        необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения
+                        залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими
+                        безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum
+                        решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких
+                        знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="">
+        <div class="container">
+            <div class="row">
+
+                <h3 class="text-center">отзывы наших клиентов</h3>
+
+                <div id="carouselReviews" class="carousel carousel-dark slide pt-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="row g-0">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 review-avatar">
+                                    <img src="assets/img/blank-profile-picture-973460_640.png"  alt="...">
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 review-content">
+                                    <h5 class="card-title">Alena Volkava</h5>
+                                    <p class="card-text">
+                                        Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum
+                                        решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких
+                                        знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="row g-0">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 img-block review-avatar">
+                                    <img src="assets/img/blank-profile-picture-973460_640.png"  alt="...">
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 review-content">
+                                    <h5 class="card-title">Игнат Игнатовоч</h5>
+                                    <p class="card-text">Взобравшись на первую вершину курсивных гор, бросил он
+                                        последний взгляд назад, на силуэт своего родного города Буквоград, на
+                                        заголовок деревни Алфавит и на подзаголовок своего переулка Строчка.
+                                        Грустный риторический вопрос скатился по его щеке и он продолжил свой путь.
+                                        По дороге встретил текст рукопись. Она предупредила его: «В моей стране все
+                                        переписывается по несколько раз. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row g-0">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 review-avatar">
+                                    <img src="assets/img/blank-profile-picture-973460_640.png"  alt="...">
+                                </div>
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 review-content">
+                                    <h5 class="card-title">Фёдр Фёдорович</h5>
+                                    <p class="card-text">
+                                        Любя, съешь щипцы, — вздохнёт мэр, — кайф жгуч. Шеф взъярён тчк щипцы с эхом
+                                        гудбай Жюль. Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф. Экс-граф? Плюш
+                                        изъят. Бьём чуждый цен хвощ! Эх, чужак! Общий съём цен шляп (юфть) — вдрызг!
+                                        Любя, съешь щипцы, — вздохнёт мэр, — кайф жгуч. Шеф взъярён тчк щипцы с эхом
+                                        гудбай Жюль. Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф. Экс-граф? Плюш
+                                        изъят. Бьём чуждый цен хвощ! Эх, чужак!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                        <button type="button" data-bs-target="#carouselReviews" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="bc-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12 text contact-info">
+                    <h3>Hieronta Oy</h3>
+                    <address class="navbar-nav">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link pt-3" href="mailto:hieronta@xxx.xxx">
+                                    <span class="i-span pe-2"><i class="far fa-address-book"></i></span>
+                                    Y-tunnus xxxxxxx-x
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-3" href="tel:+xxxxxxxxxxx">
+                                    <span class="i-span pe-2"><i class="fas fa-phone-square-alt"></i></span>
+                                    +xxx (xxx) xxx-xxxx
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-3" href="mailto:hieronta@xxx.xxx">
+                                    <span class="i-span pe-2"><i class="far fa-envelope"></i></span>
+                                    hieronta@xxx.xxx
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-3" disabled="">
+                                    <span class="i-span pe-2"><i class="fas fa-map-marked-alt"></i></span>
+                                    Kalaonni 02230 Espoo
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="social navbar-nav flex-row flex-wrap">
+                            <li class="nav-item">
+                                <a class="nav-link pt-3 pe-4" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-3 ps-4 pe-4" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-3 ps-4 pe-4" href="https://vk.com/"><i class="fab fa-vk"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-3 ps-4 pe-4" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-5 col-xs-12 text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.446433770799!2d24.724374016105852!3d60.15678798195596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df4e0f5ce6b73%3A0xb8e3ea0f1d3ded79!2sKalaonni!5e0!3m2!1sen!2sfi!4v1622659207701!5m2!1sen!2sfi" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <span class="text-center text-white p-5">&#169; 2021</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Свяжитесь с нами для записи на сеанс</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text contact-info">
+                                <address class="navbar-nav">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item pt-3 pb-3">
+                                            <span class="pe-2"><i class="fas fa-phone-square-alt"></i></span>
+                                            +xxx (xxx) xxx-xxxx
+                                        </li>
+                                        <li class="nav-item pt-3 pb-3">
+                                            <span class="pe-2"><i class="far fa-envelope"></i></span>
+                                            hieronta@xxx.xxx
+                                        </li>
+                                    </ul>
+                                    <ul class="social navbar-nav flex-row flex-wrap">
+                                        <li class="nav-item">
+                                            <a class="nav-link pt-3 pe-4" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-3 ps-4 pe-4" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-3 ps-4 pe-4" href="https://vk.com/"><i class="fab fa-vk"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link p-3 ps-4 pe-4" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                    </ul>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

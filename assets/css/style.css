@@ -1,0 +1,339 @@
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/*** HEADER ***/
+header {
+    background-color: #313335!important;
+    color: rgba(255,255,255,.55)!important;
+}
+.no-focus:focus,
+.no-focus:focus-visible,
+.no-focus:focus-within {
+    outline: none!important;
+    box-shadow: none!important;
+}
+#lang,
+#lang > option{
+    border: 2px;
+    background: #313335;
+    color: #FFFFFF;
+    outline: none!important;
+    outline-offset: 3px;
+}
+
+#lang > option:hover {
+    background: rgba(255, 201, 52, 0.55)!important;
+    color: red!important;
+}
+
+/*#lang > option:active {*/
+/*    background: #212529;*/
+/*    border: 0;*/
+/*}*/
+
+
+.social i {
+    font-size: 24px;
+}
+.social i.fa-instagram:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f9ed32+0,ee2a7b+72,002aff+100 */
+    background: #f9ed32; /* Old browsers */
+    background: -moz-linear-gradient(14deg,  #f9ed32 0%,#ee2a7b 54%,#002aff 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#f9ed32), color-stop(54%,#ee2a7b), color-stop(100%,#002aff)); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(14deg,  #f9ed32 0%,#ee2a7b 54%,#002aff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(14deg,  #f9ed32 0%,#ee2a7b 54%,#002aff 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(14deg,  #f9ed32 0%,#ee2a7b 54%,#002aff 100%); /* IE10 preview */
+    background: linear-gradient(14deg,  #f9ed32 0%,#ee2a7b 54%,#002aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9ed32', endColorstr='#002aff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social i.fa-facebook-square:hover {
+    color: #395498;
+    /*background-color: #395498;*/
+}
+.social i.fa-vk:hover {
+    color: #2783ed;
+    /*background-color: #2783ed;*/
+}
+.social i.fa-twitter:hover {
+    color: #5aa4d6;
+    /*background-color: #5aa4d6;*/
+}
+/*** HEADER ***/
+
+/*** STARTSCREEN ***/
+#startscreen .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 80vh;
+}
+#startscreen .title > h1 {
+    font-size: 8.5vw;
+    color: #ffffff;
+    -webkit-text-stroke: 2px black;
+    font-weight: bold;
+    /*background: rgba(242, 228, 202, 0.07);*/
+    /*box-shadow: 0 0 20px 20px rgba(242, 228, 202, 0.15);*/
+    /*border-radius: 30%;*/
+}
+
+#startscreen .arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#startscreen .arrow > a {
+    display: block;
+    position: relative;
+    bottom: 70px;
+    width: 80px;
+    height: 80px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate( 45deg );
+    background: none;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 5px 4px 1px  #ffffff;
+}
+#startscreen .arrow > a:hover {
+    box-shadow: 5px 5px 4px 1px  #969696;
+    border-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    #startscreen > .container {
+        /*margin-top: 80px;*/
+    }
+}
+@media (max-width: 767.98px) {
+    header .appointment {
+        width: 100%;
+    }
+    #startscreen > .container {
+        /*margin-top: 58px;*/
+    }
+}
+/*** STARTSCREEN ***/
+
+/*** SERVICES ***/
+
+#services h3 {
+    color: #000000;
+}
+#services .card {
+    box-shadow: 0 0 8px 1px grey;
+}
+#services .card,
+#services .card-body,
+#services .card-footer {
+    border: 0;
+}
+#services .card-footer {
+    padding: 0;
+}
+#services .card-footer > .btn{
+    border-radius: 0 0 4px 4px;
+}
+
+/*** REVIEWS ***/
+
+#reviews {
+    background-color: rgba(255,255,255,.55);
+}
+#carouselReviews .carousel-inner {
+    min-height: 300px;
+}
+#carouselReviews .carousel-control-prev,
+#carouselReviews .carousel-control-next {
+    opacity: 0;
+    transition: .65s opacity, .65s visibility;
+}
+#carouselReviews:hover .carousel-control-prev,
+#carouselReviews:hover .carousel-control-next {
+    background: rgba(255,255,255,0.50);
+    opacity: 1;
+}
+#carouselReviews img{
+    height: 100%;
+    border-radius: 50%;
+}
+#carouselReviews .review-avatar,
+#carouselReviews .review-content {
+    display: inherit;
+}
+
+.review-avatar {
+    justify-content: center;
+}
+.review-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/** Small devices (landscape phones, 576px and up)**/
+@media (min-width: 490px) {
+    #reviews .carousel img { width: 150px; }
+    .review-content {
+        padding-top: .65rem;
+        align-items: center;
+    }
+    #carouselReviews .carousel-inner {
+        height: 450px;
+    }
+}
+
+/** Medium devices (tablets, 768px and up)**/
+@media (min-width: 768px) {
+    #reviews .carousel img { width: 150px; }
+    .review-content { align-items: flex-start; }
+    #startscreen .title > h1 { font-size: 8.5vw; }
+}
+
+/** Large devices (desktops, 992px and up)**/
+@media (min-width: 992px) {
+    #reviews .carousel img { width: 200px; }
+    .review-content { align-items: flex-start; }
+    #startscreen .title > h1 { font-size: 8vw; }
+}
+
+/** X-Large devices (large desktops, 1200px and up)**/
+@media (min-width: 1200px) {
+    #reviews .carousel img { width: 200px;}
+    .review-content { align-items: flex-start; }
+    #startscreen .title > h1 { font-size: 8vw; }
+}
+
+/** XX-Large devices (larger desktops, 1400px and up)**/
+@media (min-width: 1400px) {
+    #reviews .carousel img { width: 250px; }
+    .review-content { align-items: flex-start; }
+    #startscreen .title > h1 { font-size: 6vw; }
+}
+/*** ABOUT ***/
+
+#about .row>div {
+    background-color: rgba(255, 255, 255, 0.66);
+    border-radius: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/*** CONTACTS ***/
+
+#contacts {
+    background-color: #313335;
+    color: rgba(255,255,255,.55);
+    text-decoration:none;
+}
+
+#contacts a {
+    color: rgba(255,255,255,.55);
+    text-decoration:none;
+}
+#contacts .i-span {
+    display: inline-block;
+    width: 25px;
+}
+#contacts a:hover {
+    color: rgba(255, 201, 52, 0.55);
+    text-decoration:none;
+}
+#contacts iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+/*** FOOTER ***/
+
+footer {
+    background-color: #313335;
+    color: rgba(255,255,255,.55);
+}
+footer .contact-info {
+    font-size: 48px;
+}
+
+#modal .modal-content {
+    background-color: #313335!important;
+    color: rgba(255,255,255,.55);
+    text-decoration:none;
+}
+#modal a {
+    color: rgba(255,255,255,.55);
+    text-decoration:none;
+}
+
+/*template color blocks*/
+.bc-1 {min-height:500px;background-color: #fff996;}
+.bc-2 {min-height:500px;background-color: #4fb8ff;}
+.bc-3 {background-color: #ff719b;}
+.bc-4 {background-color: #9aff84;}
+.bc-5 {min-height:20px;background-color: #ff9d6d;}
+.bc-6 {min-height:20vh;background-color: #eaff47;}
+/*template color blocks*/
+
+
+
+/*** PARALLAX ***/
+
+.prlx {
+    /* The image used */
+    /*background-image: url('img_parallax.jpg');*/
+    background-color: aqua;
+
+    /* Full height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-1 {
+    background-image: url('../img/wellness.jpg');
+    height: 100vh;
+}
+
+.img-2 {
+    background-image: url('../img/massage1.jpg');
+}
+.img-3 {
+    background-image: url('../img/foot.jpg');
+}
+.img-4 {
+    background-image: url('../img/massage2.jpg');
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .prlx {
+        background-attachment: scroll;
+    }
+}
+/*** PARALLAX ***/
+
